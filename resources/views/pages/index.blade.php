@@ -26,9 +26,11 @@ if (!isset($profiles)) {
                         <div class="col-6 image-column">
                         	<img src="{{ asset('images/background.jpg') }}" alt="Lawyers">
                         </div>
+						@if(isset($data->user_benefits))
                         <div class="col-6 steps-list">
                             {!! $data->user_benefits !!}
                         </div>
+						@endif
                 </div>
 
                 <div class="user_benefits_heading">
@@ -39,9 +41,11 @@ if (!isset($profiles)) {
                 <div class="col-6 image-column">
                         <img src="{{ asset('assets/images/legal_pic.jpg') }}" alt="Lawyers">
                 </div>
+				@if(isset($data->lawyer_benefits))
                 <div class="col-6 steps-list">
 					{!! $data->lawyer_benefits !!}
                 </div>
+				@endif
         	</div>
         </div>
         <div class="section4 container-fluid">

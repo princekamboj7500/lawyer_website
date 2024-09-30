@@ -78,7 +78,7 @@ class RegisterController extends Controller
                 'preferred_regions' => ['required', 'array'],
                 'working_hours' => ['required', 'string'],
                 'willing_to_travel' => ['required', 'string'],
-                'hourly_rate' => ['required', 'numeric'],
+                'hourly_rate' => ['required', 'string'],
                 'payment_methods' => ['required', 'array'],
                 'pro_bono_policy' => ['required', 'string'],
                 'experience_platforms' => ['required', 'string'],
