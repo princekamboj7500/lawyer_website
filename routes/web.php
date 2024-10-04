@@ -96,7 +96,7 @@ Route::middleware(['user.active'])->group(function () {
         $case_type = Session::get('bot_issue_type') ? Session::get('bot_issue_type') : 'Civiel recht';
         $lawyers = CustomUser::where('type', 'lawyer')->where('specializations', 'LIKE', '%"'.$case_type.'"%')->limit(3)->get();
         return view('pages.summary')->with(['session' => $session,'lawyers' => $lawyers]);
-    });
+    })->name('case.summary');
     Route::post('/update/profile/{id}',[PagesController::class,'updateprofile']);
 });
 

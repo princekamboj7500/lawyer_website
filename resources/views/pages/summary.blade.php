@@ -15,7 +15,7 @@
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    @if(isset($session['bot_user_name']))
+                    @if(isset($session['bot_evidence']))
                     <form>
                         <div class="form-group row">
                             <label for="name" class="col-4 col-form-label">Name</label> 

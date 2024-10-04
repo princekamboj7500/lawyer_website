@@ -25,7 +25,18 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/dashboard';
+    //protected $redirectTo = '/dashboard';
+
+    // Default redirect after login
+    protected function redirectTo()
+    {
+        // Check if 'bot_user_name' exists in the session
+        if (auth()->user()->type == 'client' && session()->has('bot_evidence')) {
+            return '/case-summary'; // Redirect to case-summary if the session key exists
+        }
+
+        return '/dashboard'; // Otherwise, redirect to dashboard
+    }
 
     /**
      * Create a new controller instance.

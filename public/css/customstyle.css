@@ -321,7 +321,7 @@ h2.heading_4 {
       position: absolute !important;
       top: 55% !important;
       transform: translateY(-50%) !important;
-      left: 0% !important;
+      /* left: 0% !important; */
       /* background: #fff !important; */
       padding: 4px !important;
       border-radius: 25px !important;
@@ -444,7 +444,7 @@ h2.heading_4 {
         padding: 10px 0 21px;
     }
     .testiimonal-section .image-width-text {
-        margin: 0px 15px;
+        margin: 0px 0px;
     }
 }
 
